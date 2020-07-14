@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Mobolaji Williams
 
 # Username (this should match the folder name)
 authors:
@@ -10,30 +10,27 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Data Scientist
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: ""
+- name: Jellyfish
+  url: "jellyfish.co"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Statistical Physics
+- Combinatorial Oprimization
+- Stochastic Dynamics
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
+  - course: PhD in Theoretical Biophysics
+    institution: Harvard University
     year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
+  - course: BSc in Physics
     institution: Massachusetts Institute of Technology
     year: 2008
 
@@ -70,6 +67,10 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Mobolaji Williams is a Data Scientist at Jellyfish. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+He researches new ways to extract software engineering insights from Github, Jira, Confluence, and similar applications. 
+
+He grew up in New Orleans and moved to Cambridge, MA to study Physics. His undergraduate thesis was on multiple supersymmetry breaking in potential models of dark matter, and his graduate thesis focused on theoretical problems in statistical physics applied to biomolecules. 
+
+# Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
