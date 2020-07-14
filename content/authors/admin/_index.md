@@ -15,7 +15,7 @@ role: Data Scientist
 # Organizations/Affiliations
 organizations:
 - name: Jellyfish
-  url: "jellyfish.co"
+  url: "https://jellyfish.co"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
@@ -27,7 +27,8 @@ interests:
 
 education:
   courses:
-  - course: PhD in Theoretical Biophysics
+  - icon: github
+    course: PhD in Theoretical Biophysics
     institution: Harvard University
     year: 2012
   - course: BSc in Physics
