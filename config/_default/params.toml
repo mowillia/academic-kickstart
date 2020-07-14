@@ -124,7 +124,7 @@ appointment_url = ""
 #   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
 #   ]
   
-contact_links = `[]`  
+contact_links = []
 
 ############################
 ## Social
