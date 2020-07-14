@@ -67,10 +67,7 @@ user_groups:
 - Visitors
 ---
 
-Mobolaji Williams is a Data Scientist at Jellyfish. 
-
-He researches new ways to extract software engineering insights from Github, Jira, Confluence, and similar applications. 
+Mobolaji Williams is a Data Scientist at Jellyfish researching new ways to extract software engineering insights from Github, Jira, Confluence, and similar applications. 
 
 He grew up in New Orleans and moved to Cambridge, MA to study Physics. His undergraduate thesis was on multiple supersymmetry breaking in potential models of dark matter, and his graduate thesis focused on theoretical problems in statistical physics applied to biomolecules. 
 
-# Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
