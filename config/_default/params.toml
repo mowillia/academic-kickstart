@@ -125,7 +125,6 @@ contact_links = [
 #   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
   ]
   
-contact_links = []
 
 ############################
 ## Social
