@@ -1,0 +1,253 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9114,        245]
+NotebookOptionsPosition[      8479,        219]
+NotebookOutlinePosition[      8833,        235]
+CellTagsIndexPosition[      8790,        232]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Student", " ", "Name"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", "Date", " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"MITES", " ", "Physics", " ", 
+    RowBox[{"III", ":", " ", 
+     RowBox[{
+     "Intro", " ", "to", " ", "Oscillations", " ", "and", " ", "Waves"}]}]}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Understanding", " ", "Fourier", " ", "Series"}], 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.706438832926828*^9, 3.706438866641247*^9}, {
+   3.706438907051383*^9, 3.706438919944001*^9}, {3.706439072568179*^9, 
+   3.706439089533779*^9}, {3.706439258924308*^9, 3.706439289865704*^9}, {
+   3.7064393456960297`*^9, 3.706439351887888*^9}, {3.706439447169464*^9, 
+   3.706439450270192*^9}, {3.706439639024536*^9, 3.7064397032785587`*^9}, {
+   3.706439776532929*^9, 3.7064399922180643`*^9}, 3.7064401468014183`*^9, {
+   3.70644020350401*^9, 3.706440231525341*^9}, {3.706440284268818*^9, 
+   3.706440284303707*^9}, {3.706440354737877*^9, 3.706440355031473*^9}, {
+   3.706440460576838*^9, 3.706440473598736*^9}, {3.7064409668876553`*^9, 
+   3.7064410153161507`*^9}, {3.706442876079327*^9, 3.7064428999824457`*^9}, {
+   3.708252970571965*^9, 3.7082529775600986`*^9}, {3.708253839941884*^9, 
+   3.7082538755388308`*^9}, {3.7082540804535217`*^9, 3.708254080907958*^9}, {
+   3.7082541144212523`*^9, 3.708254143014036*^9}, {3.7082546470892*^9, 
+   3.7082546718603*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["(a)", "Subsection",
+ CellChangeTimes->{{3.708254807708724*^9, 3.7082548460301237`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Run", " ", "the", " ", "code", " ", "below"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"Plot", "[", " ", 
+   RowBox[{
+    RowBox[{"Sin", "[", "x", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", 
+      RowBox[{"2", "Pi"}]}], "}"}], ",", " ", 
+    RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Orange"}]}], "]"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"Plot", " ", "Sin", " ", "function"}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.706438832926828*^9, 3.706438866641247*^9}, {
+   3.706438907051383*^9, 3.706438919944001*^9}, {3.706439072568179*^9, 
+   3.706439089533779*^9}, {3.706439258924308*^9, 3.706439289865704*^9}, {
+   3.7064393456960297`*^9, 3.706439351887888*^9}, {3.706439447169464*^9, 
+   3.706439450270192*^9}, {3.706439639024536*^9, 3.7064397032785587`*^9}, {
+   3.706439776532929*^9, 3.7064399922180643`*^9}, 3.7064401468014183`*^9, {
+   3.70644020350401*^9, 3.706440231525341*^9}, {3.706440284268818*^9, 
+   3.706440284303707*^9}, {3.706440354737877*^9, 3.706440355031473*^9}, {
+   3.706440460576838*^9, 3.706440473598736*^9}, {3.7064409668876553`*^9, 
+   3.7064410153161507`*^9}, {3.706442876079327*^9, 3.7064428999824457`*^9}, {
+   3.708252970571965*^9, 3.7082529775600986`*^9}, {3.708253839941884*^9, 
+   3.7082538755388308`*^9}, {3.7082540804535217`*^9, 3.708254080907958*^9}, {
+   3.7082541144212523`*^9, 3.708254143014036*^9}, {3.7082546470892*^9, 
+   3.708254692289506*^9}}],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+   RowBox[{
+   "The", " ", "code", " ", "below", " ", "shows", " ", "how", " ", "Taylor", 
+    " ", "Series", " ", "can", " ", "be", " ", "used", " ", "to", " ", 
+    "approximate", " ", "Trig", " ", 
+    RowBox[{"functions", ".", " ", "Run"}], " ", "the", " ", "code"}], ",", 
+   " ", 
+   RowBox[{
+   "then", " ", "annotate", " ", "each", " ", "line", " ", "explaining", " ", 
+    "its", " ", "meaning", " ", "in", " ", "the", " ", "overall", " ", 
+    "code"}]}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.708254700024538*^9, 3.708254732366631*^9}, {
+  3.7082550246550827`*^9, 3.7082550393731127`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"a", "[", "n_", "]"}], " ", ":=", " ", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"n", " ", 
+       RowBox[{"Pi", "/", "2"}]}], "]"}], "/", 
+     RowBox[{"n", "!"}]}]}], ";"}], " ", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", 
+     RowBox[{"n_", ",", "x_"}], "]"}], " ", ":=", " ", 
+    RowBox[{"x", "^", 
+     RowBox[{"(", "n", ")"}]}]}], ";"}], " ", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"y", "[", 
+    RowBox[{"x_", ",", "nf_"}], "]"}], ":=", 
+   RowBox[{"Sum", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"a", "[", "n", "]"}], 
+      RowBox[{"f", "[", 
+       RowBox[{"n", ",", "x"}], "]"}]}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "0", ",", " ", "nf"}], "}"}]}], "]"}]}], " ", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"y", "[", 
+    RowBox[{"x", ",", "100"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.706442912238708*^9, 3.706442918975259*^9}, {
+   3.7064481649786167`*^9, 3.706448170274269*^9}, {3.7082531546256866`*^9, 
+   3.7082533370246058`*^9}, {3.708253373528287*^9, 3.708253374720714*^9}, {
+   3.708253456550189*^9, 3.7082535248744507`*^9}, 3.7082541504183493`*^9, {
+   3.708254570070489*^9, 3.70825464380926*^9}, 3.708254737934761*^9, {
+   3.708254913051505*^9, 3.7082549196401854`*^9}, {3.7082549763055077`*^9, 
+   3.708254983326112*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["(b)", "Subsection",
+ CellChangeTimes->{{3.708254834547996*^9, 3.708254835274749*^9}},
+ FontWeight->"Plain"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"Run", " ", "the", " ", "code", " ", "below"}], " ", 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.708254168587151*^9, 3.708254211724271*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Piecewise", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"x", " ", "<", 
+         RowBox[{"1", "/", "2"}]}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"1", "-", "x"}], ",", 
+        RowBox[{"x", ">", 
+         RowBox[{"1", "/", "2"}]}]}], "}"}]}], "}"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", " ", 
+   RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Orange"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.708254033114525*^9, 3.708254067772818*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Modify", " ", "the", " ", "first", " ", "four", " ", "lines", " ", "of", 
+    " ", "the", " ", "Taylor", " ", "Series", " ", "code", " ", "to", " ", 
+    "compute", " ", "and", " ", "plot", " ", "the", " ", "Fourier", " ", 
+    "Series", " ", "approximation", " ", "of", " ", "the", " ", "above", " ", 
+    "function"}], " ", "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{" ", 
+              RowBox[{"Create", " ", "three", " ", 
+               RowBox[{"plots", ":", " ", "1"}]}], ")"}], " ", "the", " ", 
+             "first", " ", "five", " ", "non"}], "-", 
+            RowBox[{
+            "zero", " ", "terms", " ", "in", " ", "the", " ", "Fourier", " ", 
+             "Series"}]}], ";", " ", "2"}], ")"}], " ", "the", " ", "first", 
+         " ", "10", " ", "non"}], "-", 
+        RowBox[{
+        "zero", " ", "terms", " ", "in", " ", "the", " ", "Fourier", " ", 
+         "Series"}]}], ";", " ", "3"}], ")"}], " ", "the", " ", "first", " ", 
+     "25", " ", "non"}], "-", 
+    RowBox[{
+    "zero", " ", "terms", " ", "in", " ", "the", " ", "Fourier", " ", 
+     "Series"}]}], "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7082542195573063`*^9, 3.7082543460424128`*^9}, 
+   3.708254410836464*^9, {3.708254520527005*^9, 3.708254535573249*^9}, {
+   3.7091346717548943`*^9, 3.709134675155254*^9}}]
+}, Open  ]]
+},
+WindowSize->{1031, 651},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1504, 27, 80, "Input"],
+Cell[CellGroupData[{
+Cell[2087, 51, 93, 1, 44, "Subsection"],
+Cell[2183, 54, 1478, 27, 46, "Input"],
+Cell[3664, 83, 653, 14, 46, "Input"],
+Cell[4320, 99, 1606, 45, 131, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5963, 149, 113, 2, 44, "Subsection"],
+Cell[6079, 153, 184, 4, 28, "Input"],
+Cell[6266, 159, 623, 18, 28, "Input"],
+Cell[6892, 179, 1571, 37, 97, "Input"]
+}, Open  ]]
+}
+]
+*)
+

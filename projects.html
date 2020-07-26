@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mobolaji  Williams</title>
+        
+        <!--        Mobile Specific Meta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <!--To prevent caching of page-->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        
+        <!--Title of Site-->
+        <meta name="description" content="Mobolaji's Personal Site">
+        
+        <!-- Navigation Bar Style Sheet -->
+        <link rel="stylesheet" href="maintest_clean.css">
+        
+        <!-- Main Style Sheet -->
+        <link rel="stylesheet" href="navbar.css"> 
+    </head>
+    
+    <body>
+        <div  id = "toptitle">
+            
+            Mobolaji's Personal Webpage <br/>
+        
+        </div>
+        
+        <br>
+        
+        <div class = "topnav" id = "HeaderToolbar">
+            
+            <ul>
+                 
+                    <a  href = "index.html">Home</a>
+                
+                    <a href ="research.html"> Research </a>
+                
+                    <a  href ="teaching.html"> Teaching </a>
+                
+                    <a  href ="writing.html"> Writing </a>
+                
+ <!--               <li class="dropdown">
+                    <a class="dropbtn" href ="writing.html"> Writing </a>
+                    <div class="dropdown-content">
+                      <a href="snowglobe.html">The Snow Globe</a>
+                      <a href="pecanpie.html">Pecan Pie</a>
+                    </div>
+                    
+                </li>-->
+                
+                
+                    <a href ="misc_docs.html"> Misc Docs </a>
+                
+                    <a class="active"  href ="projects.html"> Projects </a>
+                
+                    <a  href ="physIII_2018.html"> Phys III '18 </a>
+                
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>    
+                    
+                
+            </ul>
+        
+        </div>
+        
+    
+    </body>
+    
+    <br clear = "all"/>
+    
+    <body> 
+    
+<!--
+        <div class = "wrapright" >
+            <figure >
+              <img src = "./screenshots/DSCN0048_deskshot.jpg" width ="275">
+              <figcaption>"A model of a biological system"  <br> <a href ="https://en.wikipedia.org/wiki/All_models_are_wrong"> <i>(All models are wrong.  Some models are useful.)</i> </a></figcaption>
+            </figure>
+        </div>
+-->
+        
+<!--        <div class = "wrapright">
+            <img src = "./screenshots/20151226_151250_cropped.jpg" width ="200">
+        </div>-->
+
+        
+        <h2> Projects </h2>
+        
+        Student and work projects outside of research
+        
+        <div >
+        
+        <h3> Class projects </h3>
+        
+        <ul>
+            <li><a href="./documents/superconductivity.pdf">Superconductivity </a>(Harvard - Physics 191/247-r)</li> 
+            
+            <li><a href="./documents/relativistic_mass.pdf">Relativistic Mass of the Electron</a> (Harvard - Physics 191/247-r)</li> 
+            
+            <li><a href="./documents/Quantum-Mechanics-of-Hydrocarbons.pdf">Quantum Mechanics of Hydrocarbons</a> (MIT 8.322)</li> 
+            
+            <li><a href="./documents/8.012-project-modified.pdf">Dimensional Analysis as a Guide to Perturbation Theory</a> (MIT 8.012)</li> 
+            
+        </ul>
+        
+         
+        <h3> Data Analysis </h3>
+        
+         <div id = "body" style = "max-width:725px">
+        
+            <h4> Reasoning Mind Data Analysis </h4>
+        
+            <p>
+                Reasoning Mind <a href = "https://www.reasoningmind.org/"> (https://www.reasoningmind.org/)</a> is a non-profit organization based in Houston which takes early math education curricula developed in Russian schools and adapts them into e-learning software for American students. One major theme in the curriculum is continuously presenting previously learned concepts in new contexts and as new material is learned, rather than through repeated and atomized drilling.
+                
+            </p>
+
+        
+            <p>
+                From the spring to the summer of 2015, I analyzed the 2013-14 data of Reasoning Mind’s Genie 3 platform (the existing rollout of their software) for the 6th and 7th grade curriculum.  The work consisted of parsing through gigabytes of their curriculum data and developing statistical analysis code to answer questions like
+                
+            </p>
+        
+
+            <ul>
+                <li> — What was average performance trajectory for all students throughout the curriculum?</li>
+
+                <li> — How often did students run out of time in answering questions? </li>
+
+                <li> — Did the student’s perspective on knowledge (e.g., Carol Dweck’s conception of fixed vs. flexible mindset) correlate with their performance? Did their performance affect their mindset?</li>
+
+                <li> — Did teacher engagement with the curriculum affect student performance?</li>
+            </ul>
+        
+This work was completed under Victor Kostyuk’s supervision.
+                
+             
+          <h4>  Data Science of Video Game Reviews </h4>
+             
+            <a href = "http://ac209.weebly.com/"> (http://ac209.weebly.com/)</a>
+        
+            <p>
+                In the fall of 2014, prompted by the then ongoing Gamergate controversy, I was curious to see how geographic trends in American video game usage (i.e., what types of games were most often played in what parts of the country) correlated with the types of reactions to the claims of sexism in video game culture.
+                
+            </p>
+
+        
+            <p>
+                I still think this is an interesting question, but it proved to be too large to answer, so Aaron Meisner (my project partner) and I ended up focusing our work on something much smaller. We developed statistical measures to define and identify low-hanging fruit in game development (areas where there was little competition from other game developers, low quality games, and high user interest in games) and a classification scheme which predicted the review score of a video game according to the short text used to advertise it on GameSpot.
+                
+            </p>
+        
+This work was completed for Harvard's Fall 2014 CS209 course.         
+             
+        </div>
+
+            </div>
+    <script>
+function myFunction() {
+    var x = document.getElementById("HeaderToolbar");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+       
+        
+    </body>
+</html>
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mobolaji  Williams</title>
+        
+        <!-- Mobile Specific Meta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         
+        <!--To prevent caching of page: all three
+        are needed to cover all bases-->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        
+        
+        <!--Title of Site-->
+        <meta name="description" content="Mobolaji's Personal Site">
+        
+        <!-- Navigation Bar Style Sheet -->
+        <link rel="stylesheet" href="maintest_clean.css">
+        
+        <!-- Main Style Sheet -->
+        <link rel="stylesheet" href="navbar.css"> 
+        
+    </head>
+    
+    <body>
+        <div id = "toptitle">
+            
+            Mobolaji's Personal Webpage <br/>
+        
+        </div>
+        
+        <br> 
+        
+        <div class = "topnav" id = "HeaderToolbar">
+
+                
+            
+                <ul >
+                    
+                        <a class="active"   href = "index.html">Home</a>
+                    
+                        <a href ="research.html"> Research </a>
+                  
+                        <a  href ="teaching.html"> Teaching </a>
+                   
+                        <a  href ="writing.html"> Writing </a>
+                    
+<!--                <li class="dropdown">
+                    <a class="dropbtn" href ="writing.html"> Writing </a>
+                    <div class="dropdown-content">
+                      <a href="snowglobe.html">The Snow Globe</a>
+                      <a href="pecanpie.html">Pecan Pie</a>
+                    </div>
+                    
+                </li>-->
+
+                    
+                        <a href ="misc_docs.html"> Misc Docs </a>
+            
+                        <a  href ="projects.html"> Projects </a>
+                
+                    <a  href ="physIII_2018.html"> Phys III '18 </a>
+                 
+                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>    
+                    
+                
+                    
+                </ul>
+            
+  
+    
+        
+        </div>
+        
+<!--    </body>
+    <br clear = "all"/>
+    
+    <body>-->
+<!--        <div class = "wrapright"> 
+            <img src = "./screenshots/2017_profileB.jpg" width ="285">
+        </div>-->
+        
+        <div class = "wrapright"> 
+             <img src = "./screenshots/jared_leeds_2019_profilepic.jpeg" width ="285">
+        </div>
+<!--
+        <div class = "wrapright">
+            <img src = "./screenshots/profile_photo_jyler.jpg" width ="275">
+        </div>
+-->
+<!--
+        <div class = "wrapright">
+            <img src = "./screenshots/20151226_151250_cropped.jpg" width ="275">
+        </div>
+-->
+        
+        <h2>Mobolaji Williams</h2>
+        
+        <div id = "body" style = "max-width:470px">
+        Physics graduate student; <br> Member of <a href = "http://faculty.chemistry.harvard.edu/shakhnovich/home">Shakhnovich Biophysics Lab</a> 
+        
+        <h3> Contact </h3>
+            <address>
+                Harvard University <br>
+                Department of Physics <br>
+                17 Oxford St, Cambridge, MA 02139 <br>
+                <a href = "mailto:mwilliams@physics.harvard.edu">mwilliams@physics.harvard.edu</a> <br>
+                
+            </address>
+        
+        <h3> Biographical Sketch </h3>
+            <p>
+                I grew up in New Orleans and moved to Cambridge to study physics at MIT. My undergraduate thesis was on multiple supersymmetry breaking in potential models of dark matter. I am currently a graduate student studying theoretical problems in statistical physics applied to biomolecules. 
+                
+        </p>
+        
+       </div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("HeaderToolbar");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+        
+
+<!--<p>Click the button to display the date and time this document was last modified.</p>-->
+
+<button onclick="myFunction1()">Last Modified On:</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction1() {
+    var x = document.lastModified;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+        
+    </body>
+</html>
+

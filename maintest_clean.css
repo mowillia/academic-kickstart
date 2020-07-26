@@ -1,0 +1,305 @@
+/* Cleaner version of maintest.css file
+Composed on Thursday June 15*/
+
+html {
+    background-image: linear-gradient(270deg, white 0%, white 100%);
+    -webkit-font-smoothing: antialiased;
+} 
+
+        
+
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.0);
+    color: #545454;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    padding: 2em 2em 4em;
+}
+
+body2 {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.0);
+    color: #545454;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+}
+
+p {
+  width:100%;
+  text-align:justify;
+  }
+
+.wrapright {
+    float: right;
+    margin: 5px 0px 15px 25px;
+}
+
+.indent {
+    
+    margin-left: 25px; 
+}
+
+.center {
+    text-align: center;
+    margin: 0px 25px 0px 25px;
+    /*border: 3px solid green;*/
+}
+
+.thesis0 {
+    /*text-align: center;*/
+    float:;
+
+}
+
+.thesis1 {
+    float:;
+    display:inline-block;
+
+}
+
+.thesis2 {
+    float: right;
+    display:inline-block;
+
+}
+
+ul li {
+	margin: 5px 0;
+	padding: 0 0 0 0px; 
+	list-style: none;
+	background: no-repeat 18px 0.65em;
+	}
+
+#toptitle {
+        float: right;
+        /*margin: -13px -375px;*/
+        padding: 0;
+        /*position: relative;*/
+        top: 0px;
+        /*right: 50%;*/
+        z-index: 2;
+        text-align: left;
+        color: #999999;
+        font-family: verdana, arial, helvetica, sans-serif;
+        font-size:.8em;
+        line-height: 2em;
+}
+
+
+#HeaderToolbar {
+    float: inherit;
+	top: 2px;
+	z-index: 2;
+	width: 100%; 
+	text-align: right;
+    background-color: #333;
+    background-color: dimgrey;
+}
+
+
+/* Styles for the menu bar */
+#HeaderToolbar ul{
+    float:;
+	list-style-type: none;
+    /*width: 520px;*/
+    margin: auto ;
+    padding: 0;
+    font-size: 1em;
+	background: none;
+    /*overflow: hidden;*/
+
+}
+
+#HeaderToolbar li{
+	float: left;
+    border-left: 1px solid white;  
+	margin: 0;
+	padding: 0;
+	background: none;
+    
+}
+
+#HeaderToolbar a{
+    /*display: block;*/
+	border: none;
+	font-size: 10.5px;
+	font-weight: bold;
+	font-family: verdana, arial, helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+
+
+/* Change the link color to #111 (black) on hover */
+#HeaderToolbar li a:hover:not(.active) {
+    background-color: #111;
+    background-color: darkslategrey;
+}
+
+
+#HeaderToolbarmites {
+    float: inherit;
+	top: 2px;
+	z-index: 2;
+	width: 100%; 
+	text-align: right;
+    background-color: #333;
+    background-color: dimgrey;
+}
+
+
+ 
+/* Styles for the menu bar */
+#HeaderToolbarmites ul{
+    float:;
+	list-style-type: none;
+    /*width: 235px;*/
+    margin: auto ;
+    padding: 0;
+    font-size: 1em;
+	background: none;
+    /*overflow: hidden;*/
+
+}
+
+#HeaderToolbarmites li{
+	float: left;
+    border-left: 1px solid white;  
+	margin: 0;
+	padding: 0;
+	background: none;
+    
+}
+
+#HeaderToolbarmites a{
+    /*display: block;*/
+	border: none;
+	font-size: 10.5px;
+	font-weight: bold;
+	font-family: verdana, arial, helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+#HeaderToolbarmites li a:hover:not(.active) {
+    background-color: #111;
+    background-color: darkslategrey;
+}
+
+li:last-child {
+    border-right: 1px solid white;
+    
+}
+
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: dimgrey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: #4CAF50;
+    background-color: darkslategrey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
+a {
+    color: #0083e8;
+}
+
+b, strong {
+    font-weight: 60;
+}
+
+.story { 
+    text-indent: 30px;
+    line-height: 2.0;}
+
+samp {
+    display: none;
+}
+
+img {
+    -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+            animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
+
+img {
+    border: 0; 
+    border-radius: 7px; 
+}
+
+@-webkit-keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+@keyframes colorize {
+    0% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
+}
+

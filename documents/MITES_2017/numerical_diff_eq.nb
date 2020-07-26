@@ -1,0 +1,177 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6107,        169]
+NotebookOptionsPosition[      5701,        151]
+NotebookOutlinePosition[      6054,        167]
+CellTagsIndexPosition[      6011,        164]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Student", " ", "Name"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", "Date", " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"MITES", " ", "Physics", " ", 
+    RowBox[{"III", ":", " ", 
+     RowBox[{
+     "Intro", " ", "to", " ", "Oscillations", " ", "and", " ", "Waves"}]}]}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Numerical", " ", "Solution", " ", "to", " ", "Differential", " ", 
+    "Equations"}], " ", "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Annotate", " ", "the", " ", "following", " ", "code", " ", "explaining", 
+    " ", "the", " ", "utility", " ", "of", " ", "each", " ", "line"}], " ", 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.706438832926828*^9, 3.706438866641247*^9}, {
+   3.706438907051383*^9, 3.706438919944001*^9}, {3.706439072568179*^9, 
+   3.706439089533779*^9}, {3.706439258924308*^9, 3.706439289865704*^9}, {
+   3.7064393456960297`*^9, 3.706439351887888*^9}, {3.706439447169464*^9, 
+   3.706439450270192*^9}, {3.706439639024536*^9, 3.7064397032785587`*^9}, {
+   3.706439776532929*^9, 3.7064399922180643`*^9}, 3.7064401468014183`*^9, {
+   3.70644020350401*^9, 3.706440231525341*^9}, {3.706440284268818*^9, 
+   3.706440284303707*^9}, {3.706440354737877*^9, 3.706440355031473*^9}, {
+   3.706440460576838*^9, 3.706440473598736*^9}, {3.7064409668876553`*^9, 
+   3.7064410153161507`*^9}, {3.706442876079327*^9, 3.7064428999824457`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"x0", " ", "=", " ", "5.0"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"xdot0", " ", "=", " ", "0.0"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"e", " ", "=", " ", "0.01"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"xvalues", "=", " ", 
+    RowBox[{"ConstantArray", "[", 
+     RowBox[{"0", ",", "500"}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"xdotvalues", "=", " ", 
+    RowBox[{"ConstantArray", "[", 
+     RowBox[{"0", ",", "500"}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"xvalues", "[", 
+     RowBox[{"[", "1", "]"}], "]"}], " ", "=", " ", "x0"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"xdotvalues", "[", 
+     RowBox[{"[", "1", "]"}], "]"}], " ", "=", " ", "xdot0"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", "2"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"i", "<", "501"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"xvalues", "[", 
+       RowBox[{"[", "i", "]"}], "]"}], " ", "=", " ", 
+      RowBox[{
+       RowBox[{"xvalues", "[", 
+        RowBox[{"[", 
+         RowBox[{"i", "-", "1"}], "]"}], "]"}], "+", 
+       RowBox[{"e", "*", 
+        RowBox[{"xdotvalues", "[", 
+         RowBox[{"[", 
+          RowBox[{"i", "-", "1"}], "]"}], "]"}]}]}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"xdotvalues", "[", 
+       RowBox[{"[", "i", "]"}], "]"}], " ", "=", " ", 
+      RowBox[{
+       RowBox[{"xdotvalues", "[", 
+        RowBox[{"[", 
+         RowBox[{"i", "-", "1"}], "]"}], "]"}], "+", 
+       RowBox[{"e", "*", "7.0", "*", 
+        RowBox[{"xvalues", "[", 
+         RowBox[{"[", 
+          RowBox[{"i", "-", "1"}], "]"}], "]"}]}]}]}]}]}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"ListPlot", "[", "xvalues", "]"}]}], "Input",
+ CellChangeTimes->{{3.706442912238708*^9, 3.706442918975259*^9}, {
+  3.7064481649786167`*^9, 3.706448170274269*^9}}],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+  "Rewrite", " ", "the", " ", "code", " ", "above", " ", "so", " ", "that", 
+   " ", "it", " ", "solves", " ", "the", " ", "differential", " ", "equation",
+    " ", "for", " ", "simple", " ", "harmonic", " ", "motion", " ", "with", 
+   " ", "initial", " ", "conditions", " ", "given", " ", "in", " ", "the", 
+   " ", "prompts"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.706442907686036*^9, 3.706442932918434*^9}, {
+  3.706448189756567*^9, 3.7064482136803007`*^9}, {3.706448281931821*^9, 
+  3.7064483305723763`*^9}}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.706442869908493*^9}],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+  "Rewrite", " ", "the", " ", "code", " ", "above", " ", "so", " ", "that", 
+   " ", "it", " ", "solves", " ", "the", " ", "differential", " ", "equation",
+    " ", "for", " ", "Pendulum", " ", "Motion", " ", "with", " ", "initial", 
+   " ", "conditions", " ", "given", " ", "in", " ", "prompt"}], " ", 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.706441025901722*^9, 3.706441060474863*^9}, {
+  3.706442935942178*^9, 3.706442943670211*^9}, {3.706448292101543*^9, 
+  3.7064482996514473`*^9}}]
+},
+WindowSize->{808, 651},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1569, 30, 131, "Input"],
+Cell[2130, 52, 2370, 70, 369, "Input"],
+Cell[4503, 124, 566, 10, 46, "Input"],
+Cell[5072, 136, 87, 1, 46, "Input"],
+Cell[5162, 139, 535, 10, 46, "Input"]
+}
+]
+*)
+
